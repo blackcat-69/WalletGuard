@@ -1,0 +1,6 @@
+# WalletGuard — ignored paths
+node_modules
+dist
+.env
+.env.*
+*.local

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Primary UI font = Noto Sans; numbers/monospace handled via .font-mono by Tailwind. */
+body {
+  font-family: theme('fontFamily.sans');
+}
+
+@layer utilities {
+  /*
+   Subtle Batik-inspired geometric watermark embedded as a data URI so it
+   renders on any server (no external file/path dependency). Card surfaces stay
+   solid bg-slate-700; this paints the faint pattern only in the page background.
+  */
+  .bg-batik {
+    background-color: #1e293b;
+    background-image: url("data:image/svg+xml;base64,PHSvZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCI+CiAgPGRlZnM+CiAgICA8cGF0dGVybiBpZD0iYmF0aWsiIHg9IjAiIHk9IjAiIHdpZHRoPSI2NSIgaGVpZ2h0PSI2NSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2NiZDVlMSIgc3Ryb2tlLW9wYWNpdHk9IjAuMzIiIHN0cm9rZS13aWR0aD0iMS4zIj4KICAgICAgICA8cG9seWdvbiBwb2ludHM9IjMyLjUsOSA0NCwyOCAzMi41LDQ3IDIxLDI4IiAvPgogICAgICAgIDxjaXJjbGUgY3g9IjUzIiBjeT0iMTMiIHI9IjIuMiIgLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjUyIiByPSIyLjIiIC8+CiAgICAgIDwvZz4KICAgICAgPGcgZmlsbD0iIzk0YTNiOCIgZmlsbC1vcGFjaXR5PSIwLjE4Ij4KICAgICAgICA8Y2lyY2xlIGN4PSIzMi41IiBjeT0iMzIuNSIgcj0iMi42IiAvPgogICAgICA8L2c+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyNjAiIGhlaWdodD0iMjYwIiBmaWxsPSJ1cmwoJTIzYmF0aWspIiAvPgo8L3N2Zz4K");
+    background-repeat: repeat;
+    background-size: 260px;
+  }
+}
+

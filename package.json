@@ -1,0 +1,23 @@
+{
+  "name": "walletguard",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "WalletGuard — a browser-local student allowance burn-rate calculator (dark Breeze-inspired theme).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.4.0"
+  }
+}
